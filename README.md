@@ -18,8 +18,7 @@
 + TicTacToe/**DisconnectFromGame**/{gameId:Guid}{playerId:Guid} - Отключает игрока от указанной игры
 + TicTacToe/**RestartGame**/{gameId:Guid} - Перезапускает игру (сбрасывает прогресс)
 + TicTacToe/**GetXOEmptySigns** - Возвращает символы которые используются для обозначения X, O и незанятой позиции
-![](https://github.com/filippov-code/TicTacToeApi/blob/master/screenshots/apis.png)
+![](https://github.com/filippov-code/TicTacToeApi/blob/main/screenshots/apis.png)
 ## Как проходит игра
 Игра начинается с того что нужно создать нового игрока и получить его Id. Далее нужно либо создать новую игру и ожидать пока к ней не подключится кто-нибудь другой, либо подключится к уже существующей игре. Игра начинается после подключения к ней 2 игроков, первым по умолчанию ходить гость. Игра проходит по стандартным правилам, где игроки ходят по очереди. Как только игра заканчивается сервер присылает игру со статусом 2, который означает что игра закончилась, в ответе также будет Id победителя игры, если он есть. Для обновления игры используется polling. После конца игры игроки либо отключаются от игры, либо начинают заново.
-![](https://github.com/filippov-code/TicTacToeApi/blob/master/screenshots/gameplay.png)
-
+![](https://github.com/filippov-code/TicTacToeApi/blob/main/screenshots/gameplay.png)

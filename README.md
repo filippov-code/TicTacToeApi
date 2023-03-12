@@ -1,7 +1,7 @@
 # TicTacToeApi - API для игры в крестики нолики
 ## Состав
 + TicTacToeRESTApi - WebApi
-+ TicTacToe - библиотека с логикой для работы WebApi
++ TicTacToe - библиотека с логикой игры для работы WebApi
 + JsClient - пример простейшего клиента на JavaScript
 ## Стек
 + С#, .NET 6

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "GBONXgKaELdeUj7fCqs3aGpQMjQcrg0Tt13JlHSKxEc=",
+  "Source": "TicTacToeRESTApi",
+  "BasePath": "_content/TicTacToeRESTApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

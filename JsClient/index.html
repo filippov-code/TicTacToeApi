@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row vh5 text-center bg-main-dark">
+                <div id="myNickname" class="col p-0 h-100">
+                    -
+                </div>
+            </div>
+            <div class="row vh5 text-center bg-main-light">
+                <div class="col-3 p-0 h-100 border-main-dark">
+                    Комнаты
+                    <button onclick="showAvailableGames()">Обновить</button>
+                </div>
+                <div class="col-9 p-0 h-100 border-main-dark">
+                    Игра
+                </div>
+            </div>
+            <div class="row vh90">
+                <div id="roomsContainer" class="col-3 h-100 bg-secondary-light p-0">
+                </div>
+                <div class="col-9 h-100 d-flex justify-content-center align-items-center bg-secondary-dark">
+                    <div id="gamePlug" class="">
+                        <div><img src="tictactoe_game_image.png" height="128px" width="128px"></div>
+                        <div class="text-center mt-1"><button onclick="createGame()">Создать</button></div>
+                    </div>
+                    <div id="gameArea" class="hidden">
+                        <div class="w-100 d-flex justify-content-between">
+                            <div class="container-fluid tictactoe-width p-0">
+                                <div class="row">
+                                    <div id="nickname1" class="col-6">-</div>
+                                    <div id="nickname2" class="col-6 text-end">-</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col p-0 d-flex justify-content-center">
+                                        <table  id="fieldTable">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="border border-dark tictactoe-cell text-center bg-secondary-light"></td>
+                                                    <td class="border border-dark tictactoe-cell text-center bg-secondary-light"></td>
+                                                    <td class="border border-dark tictactoe-cell text-center bg-secondary-light"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-dark tictactoe-cell text-center bg-secondary-light"></td>
+                                                    <td class="border border-dark tictactoe-cell text-center bg-secondary-light"></td>
+                                                    <td class="border border-dark tictactoe-cell text-center bg-secondary-light"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-dark tictactoe-cell text-center bg-secondary-light"></td>
+                                                    <td class="border border-dark tictactoe-cell text-center bg-secondary-light"></td>
+                                                    <td class="border border-dark tictactoe-cell text-center bg-secondary-light"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div id="gameInfo" class="col d-flex justify-content-center p-0">
+                                        Информация
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-center p-0">
+                                        <button class="tictactoe-width" onclick="disconnectFromGame()">Выйти</button>
+                                    </div>
+                                </div>
+                                <div id="restartButton" class="row">
+                                    <div class="col d-flex justify-content-center p-0 mt-1">
+                                        <button class="tictactoe-width" onclick="restartGame()">Заново</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/tictactoe.js"></script>
+    </body>
+</html>

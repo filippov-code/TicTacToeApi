@@ -1,0 +1,46 @@
+.vh90
+{
+    height: 90vh;
+}
+.vh5
+{
+    height: 5vh;
+}
+.tictactoe-width
+{
+    width: 360px;
+}
+.tictactoe-cell
+{
+    width: 120px;
+    height: 120px;
+}
+.hidden
+{
+    visibility: hidden;
+    display: none;
+}
+.bg-main-light
+{
+    background-color: #30CC70;
+}
+.bg-main-dark
+{
+    background-color: #27AC5F;
+}
+.bg-secondary-light
+{
+    background-color: #BCC5C6;
+}
+.bg-secondary-dark
+{
+    background-color: #a5afaf;
+}
+.border-main-dark
+{
+    border: 1px solid #27AC5F;
+}
+.border-secondary-dark
+{
+    border: 1px solid #99a2a2;
+}
